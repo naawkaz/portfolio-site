@@ -1,0 +1,61 @@
+:root {
+    /* ---------- Raw scales (the palette) ---------- */
+    --white: #fff;
+
+    /* Neutral: 100 = lightest off-white, 900 = darkest text */
+    --neutral-100: hsl(220, 27%, 98%);
+    --neutral-200: hsl(220, 13%, 95%);
+    --neutral-300: hsl(206, 18%, 92%);
+    --neutral-400: hsl(218, 14%, 89%);
+    --neutral-500: hsl(222, 16%, 84%);
+    --neutral-600: hsl(212, 10%, 71%);
+    --neutral-700: hsl(212, 7%, 56%);
+    --neutral-800: hsl(212, 9%, 32%);
+    --neutral-900: hsl(222, 11%, 23%);
+    --neutral-1000: hsl(218, 11%, 15%);
+
+    /* Primary: 100 = tinted backgrounds, 700 = darkest (text on light) */
+    --primary-100: hsl(181, 55%, 95%);
+    --primary-200: hsl(181, 52%, 86%);
+    --primary-300: hsl(181, 48%, 70%);
+    --primary-400: hsl(181, 47%, 50%);
+    --primary-500: hsl(181, 47%, 33%);
+    --primary-600: hsl(181, 50%, 24%);
+    --primary-700: hsl(181, 55%, 16%);
+
+    /* ---------- Roles (what components actually use) ---------- */
+
+    /* Template names, kept so existing CSS still works */
+    --text: var(--neutral-900);
+    --text-h: var(--neutral-1000);
+    --bg: var(--white);
+    --border: var(--neutral-400);
+
+    --accent: var(--primary-500);
+    --accent-border: var(--primary-400);
+
+    --on-primary: var(--white);
+    --surface: var(--white);
+    --shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+    /* ---------- Typography ---------- */
+    --sans: 'Plus Jakarta Sans', Roboto, system-ui, sans-serif;
+    --heading: 'Plus Jakarta Sans', Roboto, system-ui, sans-serif;
+    --mono: ui-monospace, Consolas, monospace;
+
+    /* ---------- Non-color tokens ---------- */
+    --radius-sm: 8px; /*Inputs*/
+    --radius-md: 16px; /*Nested cards*/
+    --radius-lg: 32px; /*Big cards*/
+    --radius-full: 9999px; /*Buttons*/
+
+    --space-1: 4px;  /* Icon-to-label gap, caption gap */
+    --space-2: 8px;  /* Tight related items, tag chips, label to input */
+    --space-3: 12px; /* Button and input vertical padding */
+    --space-4: 16px; /* Paragraph and form field gaps, button side padding */
+    --space-5: 24px; /* Card padding, gap between cards */
+    --space-6: 32px; /* Large card padding, heading to content */
+    --space-7: 48px; /* Gaps between groups in a section, page side padding */
+    --space-8: 64px; /* Section vertical padding */
+    --space-9: 96px; /* Hero and major section breaks */
+}
