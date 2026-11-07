@@ -2,6 +2,7 @@ import { Link, useParams } from 'react-router'
 import Button from '../../components/Button/Button'
 import Chip from '../../components/Chip/Chip'
 import ArrowLeftIcon from '../../components/icons/ArrowLeftIcon'
+import GitHubIcon from '../../components/icons/GitHubIcon'
 import { findProject } from '../../content/projects'
 import NotFoundPage from '../NotFoundPage/NotFoundPage'
 import styles from './ProjectPage.module.css'
@@ -15,6 +16,7 @@ function ProjectPage() {
 
   return (
     <article className={styles.page}>
+      <title>{`${project.title} · Ahmed Zakwaan`}</title>
       <Link to="/" className={styles.back}>
         <ArrowLeftIcon /> Projects
       </Link>
@@ -43,7 +45,7 @@ function ProjectPage() {
         )}
         {project.github && (
           <Button href={project.github} variant="outline" external>
-            GitHub
+            <GitHubIcon /> GitHub
           </Button>
         )}
       </div>

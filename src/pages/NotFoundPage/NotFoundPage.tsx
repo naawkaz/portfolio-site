@@ -4,6 +4,7 @@ import styles from './NotFoundPage.module.css'
 function NotFoundPage() {
   return (
     <div className={styles.page}>
+      <title>Page not found · Ahmed Zakwaan</title>
       <h1>Page not found</h1>
       <p>That page doesn't exist.</p>
       <Link to="/">Back to projects</Link>

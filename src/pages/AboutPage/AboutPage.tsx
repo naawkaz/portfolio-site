@@ -1,4 +1,7 @@
 import Button from '../../components/Button/Button'
+import GitHubIcon from '../../components/icons/GitHubIcon'
+import LinkedInIcon from '../../components/icons/LinkedInIcon'
+import MailIcon from '../../components/icons/MailIcon'
 import { experience, intro, links, studies, type TimelineEntry } from '../../content/about'
 import styles from './AboutPage.module.css'
 
@@ -22,13 +25,24 @@ function Timeline({ heading, entries }: { heading: string; entries: TimelineEntr
 function AboutPage() {
   return (
     <div className={styles.page}>
+      <title>About · Ahmed Zakwaan</title>
       <div className={styles.main}>
         <h1>About</h1>
         <p>{intro}</p>
         <div className={styles.links}>
-          <a href={links.github} target="_blank" rel="noreferrer">GitHub</a>
-          {links.linkedin && <a href={links.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>}
-          {links.email && <a href={`mailto:${links.email}`}>Contact</a>}
+          <a href={links.github} target="_blank" rel="noreferrer">
+            <GitHubIcon /> GitHub
+          </a>
+          {links.linkedin && (
+            <a href={links.linkedin} target="_blank" rel="noreferrer">
+              <LinkedInIcon /> LinkedIn
+            </a>
+          )}
+          {links.email && (
+            <a href={`mailto:${links.email}`}>
+              <MailIcon /> Contact
+            </a>
+          )}
         </div>
         <Timeline heading="Work Experience" entries={experience} />
         <Timeline heading="Studies" entries={studies} />

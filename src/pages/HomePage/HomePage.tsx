@@ -5,6 +5,7 @@ import styles from './HomePage.module.css'
 function HomePage() {
   return (
     <>
+      <title>Ahmed Zakwaan</title>
       <h1 className={styles.hero}>
         Hello! I am Zakwaan, a Software Engineering graduate building full stack and cloud solutions
       </h1>
