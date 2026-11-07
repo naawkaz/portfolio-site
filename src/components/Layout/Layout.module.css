@@ -1,0 +1,12 @@
+/* The top bar runs full width; page content is capped here */
+.main {
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding: var(--space-7) var(--space-7) var(--space-8);
+}
+
+@media (max-width: 767px) {
+  .main {
+    padding: var(--space-5) var(--gutter) calc(var(--tabbar-height) + var(--space-6));
+  }
+}

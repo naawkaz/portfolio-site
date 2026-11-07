@@ -24,3 +24,7 @@ vite
 *.njsproj
 *.sln
 *.sw?
+
+# Personal notes for Claude sessions (untracked on purpose)
+notes/
+CLAUDE.local.md

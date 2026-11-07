@@ -1,0 +1,30 @@
+.bar {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .bar {
+    position: fixed;
+    inset: auto 0 0;
+    display: flex;
+    height: var(--tabbar-height);
+    padding-bottom: env(safe-area-inset-bottom);
+    border-top: 1px solid var(--border);
+    background: var(--bg);
+  }
+}
+
+.tab,
+.active {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.active {
+  color: var(--accent);
+  font-weight: 600;
+}

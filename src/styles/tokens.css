@@ -25,23 +25,38 @@
 
     /* ---------- Roles (what components actually use) ---------- */
 
-    /* Template names, kept so existing CSS still works */
-    --text: var(--neutral-900);
-    --text-h: var(--neutral-1000);
+    --text-body: var(--neutral-900);
+    --text-strong: var(--neutral-1000);
+    --text-muted: var(--neutral-700);
+
     --bg: var(--white);
+    --surface: var(--neutral-100); /* Cards and panels sitting on --bg */
     --border: var(--neutral-400);
 
     --accent: var(--primary-500);
+    --accent-hover: var(--primary-600);
     --accent-border: var(--primary-400);
+    --accent-subtle: var(--primary-100); /* Chip and tinted backgrounds */
+    --on-accent: var(--white); /* Text on a filled --accent */
 
-    --on-primary: var(--white);
-    --surface: var(--white);
     --shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
     /* ---------- Typography ---------- */
     --sans: 'Plus Jakarta Sans', Roboto, system-ui, sans-serif;
     --heading: 'Plus Jakarta Sans', Roboto, system-ui, sans-serif;
     --mono: ui-monospace, Consolas, monospace;
+
+    /* Provisional scale, in rem so it follows the root size. Replace with the Figma type styles */
+    --text-sm: 0.875rem;
+    --text-md: 1rem;
+    --text-lg: 1.25rem;
+    --text-xl: 1.75rem;
+    --text-2xl: 2.5rem;
+
+    /* ---------- Layout ---------- */
+    --content-max: 1200px;
+    --gutter: 20px; /* Page side margin on mobile */
+    --tabbar-height: 64px;
 
     /* ---------- Non-color tokens ---------- */
     --radius-sm: 8px; /*Inputs*/
