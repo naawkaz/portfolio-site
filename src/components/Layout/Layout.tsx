@@ -11,7 +11,7 @@ function Layout() {
         <Outlet />
       </main>
       <TabBar />
-      <ScrollRestoration />
+      <ScrollRestoration getKey={(location) => location.pathname}/>
     </>
   )
 }

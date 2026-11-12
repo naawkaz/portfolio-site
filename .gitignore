@@ -26,5 +26,6 @@ vite
 *.sw?
 
 # Personal notes for Claude sessions (untracked on purpose)
+.claude/
 notes/
 CLAUDE.local.md

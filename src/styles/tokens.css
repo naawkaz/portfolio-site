@@ -28,10 +28,15 @@
     --text-body: var(--neutral-900);
     --text-strong: var(--neutral-1000);
     --text-muted: var(--neutral-700);
+    --text-light: var(--neutral-800);
+
+    --tracking-1: 0.08em;
 
     --bg: var(--white);
     --surface: var(--neutral-100); /* Cards and panels sitting on --bg */
+    --surface-sunken: var(--neutral-300); /* Image placeholders */
     --border: var(--neutral-400);
+    --border-subtle: var(--neutral-300); /* Card outlines, dividers */
 
     --accent: var(--primary-500);
     --accent-hover: var(--primary-600);
@@ -47,15 +52,22 @@
     --mono: ui-monospace, Consolas, monospace;
 
     /* Provisional scale, in rem so it follows the root size. Replace with the Figma type styles */
+    --text-xs: 0.675rem;
     --text-sm: 0.875rem;
     --text-md: 1rem;
     --text-lg: 1.25rem;
-    --text-xl: 1.75rem;
-    --text-2xl: 2.5rem;
+    --text-xl: 1.625rem;
+    --text-2xl: 2.25rem;
+    --text-hero: clamp(2rem, 1.25rem + 2.6vw, 3.25rem); /* Grows with the viewport, capped at both ends */
+
+    /* ---------- Motion ---------- */
+    --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+    --duration: 180ms;
 
     /* ---------- Layout ---------- */
     --content-max: 1200px;
     --gutter: 20px; /* Page side margin on mobile */
+    --header-height: 72px;
     --tabbar-height: 64px;
 
     /* ---------- Non-color tokens ---------- */

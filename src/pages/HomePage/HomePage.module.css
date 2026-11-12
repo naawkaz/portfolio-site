@@ -1,6 +1,25 @@
 .hero {
-  max-width: 22em;
-  margin-bottom: var(--space-8);
+  max-width: 20em;
+  padding-block: var(--space-8) var(--space-9);
+  font-size: var(--text-hero);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  text-wrap: balance; /* Evens out the lines, so no single orphaned word */
+}
+
+.name {
+  color: var(--accent);
+}
+
+/* Small uppercase section label above the grid */
+.label {
+  margin-bottom: var(--space-5);
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .grid {
@@ -17,11 +36,11 @@
 
 @media (max-width: 767px) {
   .hero {
-    margin-bottom: var(--space-6);
-    font-size: var(--text-xl);
+    padding-block: var(--space-6) var(--space-7);
   }
 
   .grid {
     grid-template-columns: 1fr;
+    gap: var(--space-4);
   }
 }
