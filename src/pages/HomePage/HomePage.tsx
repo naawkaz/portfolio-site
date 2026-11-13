@@ -7,8 +7,7 @@ function HomePage() {
     <>
       <title>Ahmed Zakwaan</title>
       <h1 className={styles.hero}>
-        Hello! I am <span className={styles.name}>Zakwaan</span>, a Software Engineering graduate building
-        full stack and cloud solutions
+        <span className={styles.name}>hello.</span> I make fullstack and cloud applications
       </h1>
 
       <section aria-labelledby="projects-heading">

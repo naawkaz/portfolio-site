@@ -9,17 +9,15 @@ export type TimelineEntry = {
 }
 
 // Blank lines become paragraph breaks
-export const intro = `I'm a final-year Software Engineering student at Asia Pacific University, based in Malé, Maldives. I like building things end to end: React frontends, APIs in Spring Boot and Express, and getting them running on AWS.
+export const intro = `I'm a Software Engineering student graduate from Asia Pacific University. I like building end to end applications. Specifically React frontends, APIs in Spring Boot and Postgres databases.
 
-My final year project, CoralLineage, brings that together with machine learning: a tracked, reproducible workflow for annotating coral reef images.
-
-Before software, I worked as a dental assistant.`
+I brought that together in my final year project, CoralLineage, with machine learning to produce a reproducible workflow for annotating coral reef images.`
 
 export const experience: TimelineEntry[] = [
   {
     title: 'Application Development Intern',
     org: 'Malé Water and Sewerage Company (MWSC)',
-    period: 'Oct 2025 – Jan 2026',
+    period: 'Oct 2025 - Jan 2026',
     detail: 'Built Flutter screens for internal systems, working alongside a .NET backend.',
   },
   // {

@@ -1,6 +1,6 @@
 // Single source of truth for the home grid and /projects/:slug.
-// Images: put them in src/assets/projects/<slug>/, import them here and set
-// thumbnail/diagram, so Vite fingerprints them.
+// Images: thumbnail/diagram are URL paths to files in public/ (public/thumbnails, public/diagrams).
+// Files in public/ are served as they are, with no fingerprinting.
 
 export type Category = 'ML' | 'Cloud' | 'Full stack' | 'Desktop'
 
@@ -29,6 +29,8 @@ export const projects: Project[] = [
     categories: ['ML', 'Full stack'],
     stack: ['React', 'Spring Boot', 'PostgreSQL', 'Flask', 'PyTorch', 'DVC', 'MLflow', 'Docker Compose'],
     github: 'https://github.com/naawkaz/corallineage',
+    thumbnail: '/thumbnails/corallineage_thumb.png',
+    diagram: '/diagrams/corallineage_diagram.png',
     decisions: [
       'Split into three services: React frontend, Spring Boot API, and a Flask + PyTorch ML service. This allows ML stack to stay separate from the Java backend',
       'Dataset versioning module that tracks annotation dataset versions and allows comparisons between them',
@@ -46,6 +48,8 @@ export const projects: Project[] = [
     stack: ['React', 'Express', 'PostgreSQL', 'AWS Lambda', 'API Gateway', 'RDS', 'SNS', 'AWS SAM'],
     role: 'Public Module \n Deploying Services',
     github: 'https://github.com/Legendary-Phoenix/RescueNet-Disaster-Relief-Management-System',
+    thumbnail: '/thumbnails/rescuenet_thumb.png',
+    diagram: '/diagrams/rescuenet_diagram.png',
     decisions: [
       'Five Express services (auth, admin, organisation, volunteer and public), each running as its own Lambda behind one API Gateway and defined in a single SAM template',
       'Public module is read-only',
@@ -61,6 +65,8 @@ export const projects: Project[] = [
     categories: ['ML'],
     stack: ['Python', 'TensorFlow', 'Keras Tuner', 'OpenCV', 'scikit-learn', 'pandas'],
     github: 'https://github.com/naawkaz/coral_classification',
+    thumbnail: '/thumbnails/coral_classification_thumb.png',
+    diagram: '/diagrams/coral_classification_diagram.png',
     decisions: [
       'Train, validation and test split is grouped by image for accurate splitting',
       'Classes were heavily skewed, so the common class was undersampled, rare ones oversampled, and models were chosen by balanced accuracy instead of plain accuracy',
@@ -91,6 +97,7 @@ export const projects: Project[] = [
     categories: ['Desktop'],
     stack: ['C#', '.NET', 'WinForms'],
     github: 'https://github.com/naawkaz/File-Sorter',
+    thumbnail: '/thumbnails/filesorter_thumb.png',
     decisions: [
       'Parallelization used in sorting',
       'Presets save sets of folders and extensions',
@@ -106,6 +113,7 @@ export const projects: Project[] = [
     categories: ['Desktop'],
     stack: ['Java', 'Swing', 'Maven'],
     github: 'https://github.com/naawkaz/HigherOrLower',
+    thumbnail: '/thumbnails/highlow_thumb.png',
     decisions: [],
   },
 ]

@@ -35,9 +35,14 @@
   background: var(--surface);
 }
 
+/* 36px links + 4px padding top and bottom = a 44px pill, the same height as the icons and Contact */
 .link,
 .active {
-  padding: var(--space-2) var(--space-4);
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding-inline: var(--space-4);
+  line-height: 1.25;
   border-radius: var(--radius-full);
   font-size: var(--text-sm);
   font-weight: 600;

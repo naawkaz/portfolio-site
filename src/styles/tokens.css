@@ -69,6 +69,7 @@
     --gutter: 20px; /* Page side margin on mobile */
     --header-height: 72px;
     --tabbar-height: 64px;
+    --tabbar-offset: 16px; /* Gap between the floating tab bar and the screen edge */
 
     /* ---------- Non-color tokens ---------- */
     --radius-sm: 8px; /*Inputs*/
